@@ -40,6 +40,7 @@ app.UseMiddleware<RequestOneLoggingMiddleware>();
 app.UseMiddleware<RequestSecondLoggingMiddleware>();
 app.UseMiddleware<HeaderValidationMiddleware>();
 app.UseMiddleware<FooterValidationMiddleware>();
+app.UseMiddleware<CustomHeadersMiddleware>();
 
 // Configure the HTTP request pipeline.
 app.UseSwagger();
